@@ -1,0 +1,435 @@
+﻿@charset "utf-8";	
+@media (min-width:1201px) {
+	.maincontent{
+		width: 1100px;						
+		margin: auto;		
+		position: relative;
+	}
+	#center1{
+		width: 1100px;
+		margin:0 auto;
+		margin-bottom: 10px;
+		background-image: url('../images/slider-bg2.png');
+		position: relative;
+		background-size: 100% 600px; 
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+	.bmgkhead{
+		text-align:center;
+	}
+	img.bg{
+		width: 1100px;
+		margin: 0 auto;
+	}
+	.leftnav{
+		float: left;
+		width: 20%;
+		height:610px;
+		margin-top: 10px;
+		background-color:rgba(230,230,230,0.6);
+		position: relative;
+	}
+	.leftnav>div>img{
+		width:190px;
+
+	}
+	.leftnav span.bmkg{
+		float: left;
+		position:relative;
+		bottom:70px; 
+		left:30px;
+		font-size:28px;
+		color:#FFFFFF;
+		letter-spacing:4px;
+	}
+	.leftnav ul{
+		float: left;
+		position: relative;
+		bottom:30px;
+		left:30px;
+		list-style: square inside url('../images/lx.png')
+		
+	}
+	.leftnav ul li{
+		list-style: square inside url('../images/lx.png');
+		height: 30px;
+		font-size: 20px;
+		color:#000000;
+		height:40px;
+		letter-spacing:3px;
+	}
+	.leftnav ul>:first-child{
+		
+		list-style: square inside url('../images/lx.png');
+		color:#333399;
+	}
+	.leftnav ul li:hover{
+		/*list-style: square inside url('../images/lx2.png');*/
+		font-size: 20px;
+		color:#333399;
+	}
+	.leftnav ul li a{
+		text-decoration:none;
+		color:#000000;
+		line-height: 30px;
+
+	}
+
+	.content {
+		float: right;position:relative;
+		width:78%;
+		padding-top:10px;	
+	}
+	.content>h1{
+		float: left;
+		text-align: left;
+		width: 100%;
+		font-family: '黑体';
+		font-size: 32px;
+		color: #222796;
+		letter-spacing:5px;
+		margin-top:20px;
+
+		position: relative;
+	}
+	.content article{
+		margin-top:25px;
+		margin-right: 10px;
+		width: 96%;
+		float: right;
+	}
+	.content article span{
+		text-align: left;
+		margin-top: 80px;
+		font-size:16px;
+		font-family: '黑体';
+		line-height: 180%;
+	}
+}
+@media (min-width:993px) and (max-width: 1200px) {
+.maincontent{
+		width:950px;						
+		margin: auto;		
+		position: relative;
+	}
+	#center1{
+		width:950px;
+		margin:0 auto;
+		margin-bottom: 10px;
+		background-image: url('../images/slider-bg2.png');
+		position: relative;
+		background-size: 100% 600px; 
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+	.bmgkhead{
+		text-align:center;
+	}
+	img.bg{
+		width:950px;
+		margin: 0 auto;
+	}
+	.leftnav{
+		float: left;
+		width: 20%;
+		height:680px;
+		margin-top: 10px;
+		background-color:rgba(230,230,230,0.6);
+		position: relative;
+	}
+	.leftnav>div>img{
+		width:175px;
+
+	}
+	.leftnav span.bmkg{
+		float: left;
+		position:relative;
+		bottom:65px; 
+		left:25px;
+		font-size:26px;
+		color:#FFFFFF;
+		letter-spacing:4px;
+	}
+	.leftnav ul{
+		float: left;
+		position: relative;
+		bottom:25px;
+		left:25px;
+		list-style: square inside url('../images/lx.png')
+		
+	}
+	.leftnav ul li{
+		list-style: square inside url('../images/lx.png');
+		height: 30px;
+		font-size: 20px;
+		color:#000000;
+		height:40px;
+		letter-spacing:3px;
+	}
+	.leftnav ul>:first-child{
+		
+		list-style: square inside url('../images/lx.png');
+		color:#333399;
+	}
+	.leftnav ul li:hover{
+	/*	list-style: square inside url('../images/lx2.png');*/
+		font-size: 20px;
+		color:#333399;
+	}
+	.leftnav ul li a{
+		text-decoration:none;
+		color:#000000;
+		line-height: 30px;
+
+	}
+
+	.content {
+		float: right;position:relative;
+		width:78%;
+		padding-top:10px;	
+	}
+	.content>h1{
+		float: left;
+		text-align: left;
+		width: 100%;
+		font-family: '黑体';
+		font-size: 30px;
+		color: #222796;
+		letter-spacing:4px;
+		margin-top:15px;
+		position: relative;
+	}
+	.content article{
+		margin-top:20px;
+		margin-right: 10px;
+		width: 96%;
+		float: right;
+	}
+	.content article span{
+		text-align: left;
+		margin-top: 80px;
+		font-size:16px;
+		font-family: '黑体';
+		line-height: 180%;
+	}
+}
+@media (min-width:769px) and (max-width: 992px){
+.maincontent{
+		width:100%;						
+		margin: auto;		
+		position: relative;
+	}
+	#center1{
+		width:750px;
+		margin:0 auto;
+		margin-bottom: 10px;
+		background-image: url('../images/slider-bg2.png');
+		position: relative;
+		background-size: 100% 600px; 
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+	.bmgkhead{
+		text-align:center;
+	}
+	img.bg{
+		width:750px;
+		margin: 0 auto;
+	}
+	.leftnav{
+		float: left;
+		width: 20%;
+		height:700px;
+		margin-top: 10px;
+		background-color:rgba(230,230,230,0.6);
+		position: relative;
+	}
+	.leftnav>div>img{
+		width:135px;
+
+	}
+	.leftnav span.bmkg{
+		float: left;
+		position:relative;
+		bottom:52px; 
+		left:17px;
+		font-size:22px;
+		color:#FFFFFF;
+		letter-spacing:2px;
+	}
+	.leftnav ul{
+		float: left;
+		position: relative;
+		bottom:18px;
+		left:15px;
+		list-style: square inside url('../images/lx.png')
+		
+	}
+	.leftnav ul li{
+		list-style: square inside url('../images/lx.png');
+		height: 30px;
+		font-size:18px;
+		color:#000000;
+		height:40px;
+		letter-spacing:3px;
+	}
+	.leftnav ul>:first-child{
+		
+		list-style: square inside url('../images/lx.png');
+		color:#333399;
+	}
+	.leftnav ul li:hover{
+		/*list-style: square inside url('../images/lx2.png');*/
+		font-size: 18px;
+		color:#333399;
+	}
+	.leftnav ul li a{
+		text-decoration:none;
+		color:#000000;
+		line-height: 30px;
+
+	}
+
+	.content {
+		float: right;position:relative;
+		width:78%;
+		padding-top:10px;	
+	}
+	.content>h1{
+		float: left;
+		text-align: left;
+		width: 100%;
+		font-family: '黑体';
+		font-size: 28px;
+		color: #222796;
+		letter-spacing:3px;
+		margin-top:10px;
+
+		position: relative;
+	}
+	.content article{
+		margin-top:18px;
+		margin-right: 10px;
+		width: 96%;
+		float: right;
+	}
+	.content article span{
+		text-align: left;
+		margin-top: 80px;
+		font-size:16px;
+		font-family: '黑体';
+		line-height: 180%;
+	}
+}
+	@media (max-width:768px) {
+	.maincontent{
+		width:100%;						
+		margin: auto;		
+		position: relative;
+	}
+	#center1{
+		width:100%;
+		margin:0 auto;
+		margin-bottom: 10px;
+		background-image: url('../images/slider-bg2.png');
+		position: relative;
+		background-size: 100% 600px; 
+		background-repeat: no-repeat;
+		background-position: bottom center;
+	}
+	.bmgkhead{
+		text-align:center;
+	}
+	img.bg{
+		width: 100%;
+		margin: 0 auto;
+	}
+	.leftnav{
+		width: 100%;
+		margin-top:60px;
+	}
+	.leftnav>div{
+		width: 100%;
+		height:45px;
+		background-color:rgba(230,230,230,0.6);
+		position: relative;
+		bottom:60px;
+	}
+	.leftnav>div>img{
+		width:140px;
+		height:70px;
+		position: relative;
+		overflow: hidden;
+		bottom:15px;
+
+	}
+	.leftnav span.bmkg{
+		position:relative;
+		bottom: 15px;
+		left: -123px;
+		font-size:22px;
+		color:#FFFFFF;
+		letter-spacing:2px;
+		font-family: '黑体';
+	}
+	.leftnav ul{
+		position: relative;
+		bottom:50px;
+		width: 96%;
+		margin: 0 auto;
+		box-shadow: 0px 0px 2px #888;
+		background-color:rgba(230,230,230,0.6);
+		padding-top: 10px;
+	}
+	.leftnav ul li{
+		height: 25px;
+		font-size:18px;
+		color:#333399;
+		height:30px;
+		letter-spacing:2px;
+		margin-left: 15px;
+	}
+	.leftnav ul li a{
+		text-decoration:none;
+		color:#333399;
+		line-height: 25px;
+
+	}
+	.content {
+		float: right;
+		width:90%;
+		margin:0 auto;
+		position:relative;
+
+		left:-5%;
+
+	}
+	.content>h1{
+		float: left;
+		text-align: left;
+		width: 100%;
+		font-family: '黑体';
+		font-size: 28px;
+		color: #222796;
+		letter-spacing:3px;
+		margin-top:-25px;
+
+		position: relative;
+	}
+	.content article{
+		margin-top:10px;
+		margin-right:2%;
+		width: 96%;
+		float: right;
+	}
+	.content article>h1{
+		margin-top: 0px;
+	}
+	.content article span{
+		text-align: left;
+		margin-top: 80px;
+		font-size:16px;
+		font-family: '黑体';
+		line-height: 180%;
+	}

@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+          content="济南大学学生工作部（处）网站(http://xgc.ujn.edu.cn),简称学工在线,是隶属于济南大学学生工作部（处）的唯一校级官方网站。济南大学十佳优秀网站之一。"/>
+	<title>{dede:global.cfg_webname/}</title>
+	<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/bumengaikuang.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/hf.css">
+	<style type="text/css">
+	</style>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.reveal.js"></script>
+	<script>
+function submit(){
+			document.fileForm.submit();
+		}
+$(document).ready(function () {          //当加载时
+    $("#toTop").click(function(event) {
+		$("html,body").animate({
+			scrollTop:"0px"
+		},
+			666
+		)
+	});
+});
+</script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ujn.jquery.js"></script>
+</head>
+<body>
+
+	<!--     PHP head引用 -->
+	{dede:include filename="head.htm"/}
+	<div class="maincontent">
+		<div id="center1">
+			<div class="bmgkhead">
+				<img src="{dede:global.cfg_templets_skin/}/images/bumengaikuang_head.png" class="bg" /></div>
+			<div class="leftnav">
+				<div>
+					<img src="{dede:global.cfg_templets_skin/}/images/label.png" />
+					<span class="bmkg">部门概况</span>
+				</div>
+
+
+				<ul>
+
+					
+					{dede:arclist idlist='2362,66,67' orderby='id'}
+						<li><a href='[field:arcurl/]'>[field:title/]</a>
+						</li>
+						{/dede:arclist}
+				</ul>	
+			</div>
+			<div class="content">
+				<h1>{dede:field.title/}</h1>
+				<article>
+					
+					{dede:field.body/}
+				</article>	
+			</div>
+			<div style="width:0;clear:both;"></div>
+		</div>	
+	</div>
+        <!--     PHP footer引用 -->
+        {dede:include filename="footer.htm"/}
+
+    <script src="{dede:global.cfg_templets_skin/}
+/js/bootstrap.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)file:///D:/%E6%A1%8C%E9%9D%A2/xgctemp_files/xgctemp.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<meta name="description" content="济南大学学生工作部（处）网站(http://xgc.ujn.edu.cn),简称学工在线,是隶属于济南大学学生工作部（处）的唯一校级官方网站。济南大学十佳优秀网站之一。" /> 
+	<title>{dede:global.cfg_webname/}</title>
+	<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/bumengaikuang.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/hf.css">
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.reveal.js"></script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ujn.jquery.js"></script>
+	<style type="text/css">
+	.content a{
+		display: block;
+		width: 74%;
+		color: #000;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.dy ul li{
+		min-width: 61px;
+		line-height: 20px;
+		font-size: 14px;
+		float: left;	
+	}
+	.right_list>section>ul>li{
+		line-height: 30px;
+	}
+	</style>
+</head>
+<body>
+{dede:include filename="head.htm"/}
+<div class="maincontent">
+		<div id="center1">
+			<div class="bmgkhead">
+				<img src="{dede:global.cfg_templets_skin/}/images/bumengaikuang_head.png" class="bg" /></div>
+			<div class="leftnav">
+				<div>
+					<img src="{dede:global.cfg_templets_skin/}/images/label.png" />
+					<span class="bmkg">{dede:field name='typename'/}</span>
+				</div>
+				<ul>
+					{dede:channel row='20'  type ='son' typeid ='7'}
+						<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+					{/dede:channel}
+				</ul>
+				<div style="clear: both;height: 0;"></div>	
+			</div>
+			<div class="content">
+				<h1>{dede:field.typename/}</h1>
+				<div class="right_list" style="width:100%;">
+						<section> 
+				    	<ul>
+					    	{dede:list typeid='8' pagesize='20' }
+						    	<li><span class="info" style="margin-right:0px;float:right">[field:pubdate function="date('Y-m-d',@me)"/]</span><a href="[field:arcurl/]" title="[field:fulltitle/]">[field:title/]</a> </li>
+							{/dede:list}
+				    	</ul>
+				    	<div class="dy">
+				    		<ul style="text-align:center;margin:0 auto;">{dede:pagelist listsize='1'/}</ul>
+				    	</div>
+						</section>
+				</div>
+			</div>
+			<div style="height:0;clear:both;"></div>
+		</div>	
+	</div>
+        <!--     PHP footer引用 -->
+        {dede:include filename="footer.htm"/}
+    <script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+    </body>
+</html>

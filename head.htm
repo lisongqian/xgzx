@@ -1,0 +1,106 @@
+<div class="header">
+		<div class="juzhong">
+			<div id="movebutton">
+				<form action="/plus/search.php">
+					<input type="hidden" name="kwtype" value="0" />
+	        <input type="text" name="q" class="search-input" placeholder="输入搜索内容" >
+					<img src="{dede:global.cfg_templets_skin/}/images/movebutton.png" onclick="submit()"/>
+				</form>
+			</div>
+			<img id="left" src="{dede:global.cfg_templets_skin/}/images/left.png"/>	
+			<img id="center" src="{dede:global.cfg_templets_skin/}/images/center.png"  />
+			<img id="right" src="{dede:global.cfg_templets_skin/}/images/right.png" style="height:50px;"/>
+			<a href="#"  data-reveal-id="movebutton" data-animation="fade"><img class="move head_move" src="{dede:global.cfg_templets_skin/}/images/movesousuo.png"/></a>
+			<img data-toggle="collapse" data-target=".navbar-collapse" class="move head_move" src="{dede:global.cfg_templets_skin/}/images/movecaidan.png"/>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+		<!-- 顶部导航 -->
+		<div class="navbar navbar-default" role="navigation" id="menu-nav">
+		        <div  class="navbar-collapse collapse" style="width:100%;overflow: hidden;">
+		            <ul class="nav navbar-nav">
+		                <li><a href="/">首  页</a></li>
+		                <li class="dropdown">
+		                    <a href="/bumengaikuang/" class="dropdown-toggle" data-toggle="dropdown">部门概况<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="/bumengaikuang/2015/0713/2362.html" >部门简介</a></li>
+		                        <li><a href="/bumengaikuang/2014/1024/66.html">现任领导</a></li>
+		                        <li><a href="/bumengaikuang/2014/1024/67.html">岗位职责</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown"><a href="/a/guizhangzhidu/xueshengjiaoyu/" class="dropdown-toggle" data-toggle="dropdown">规章制度<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="/a/guizhangzhidu/xueshengjiaoyu/">教育制度</a></li>
+		                        <li><a href="/a/guizhangzhidu/xueshengguanli/" >管理制度</a></li>
+		                        <li><a href="/a/guizhangzhidu/xueshengzizhu/" >资助制度</a></li>
+		                        <li><a href="/a/guizhangzhidu/jiuyezhidao/" >就业制度</a></li>
+		                        <li><a href="/a/guizhangzhidu/jiaoyuliucheng/">教育流程</a></li>
+		                        <li><a href="/a/guizhangzhidu/guanliliucheng/">管理流程</a></li>
+		                        <li><a href="/a/guizhangzhidu/zizhuliucheng/">资助流程</a></li>
+		                        <li><a href="/a/guizhangzhidu/jiuyeliucheng/">就业流程</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown"><a href="/jiaoyuguanli/" class="dropdown-toggle" data-toggle="dropdown">教育管理<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="/plus/list.php?tid=21" >思想引领</a></li>
+		                        <li><a href="/plus/list.php?tid=32" >校园菁英</a></li>
+		                        <li><a href="/2015jiafang/index.php?upcache=1"" >辅导员家访</a></li>
+		                        <li><a href="/plus/list.php?tid=24" >形式与政策课</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown"><a href="http://xgc.ujn.edu.cn/zizhu/index.html" class="dropdown-toggle" data-toggle="dropdown">学生资助<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=1" >中心简介</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=2" >政策规章</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=3" >工作流程</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=4" >社会捐助</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=5" >学生风采</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=6" >学生组织</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=7" >常用下载</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=8" >联系我们</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/zizhu/plus/list.php?tid=20" >新闻动态</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown"><a href="http://career.ujn.edu.cn" class="dropdown-toggle" data-toggle="dropdown">就业指导<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="http://career.ujn.edu.cn/list.asp?sortsid=7" >重要通知</a></li>
+		                        <li><a href=" http://career.ujn.edu.cn/list.asp?sortsid=10" >基层就业与政策公告</a></li>
+		                        <li><a href="http://career.ujn.edu.cn/list.asp?sortsid=1" >校内招聘信息</a></li>
+		                        <li><a href="http://career.ujn.edu.cn/list.asp?sortsid=2" >校外招聘信息</a></li>
+		                        <li><a href="http://career.ujn.edu.cn/list.asp?sortsid=5" >政策法规</a></li>
+		                        <li><a href="http://career.ujn.edu.cn/list.asp?sortsid=6" >就业指导</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown"><a href="http://xgc.ujn.edu.cn/xinli/index.html" class="dropdown-toggle" data-toggle="dropdown">心理咨询<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=14" >中心概况</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=19" >预约咨询</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=15 " >心灵驿站</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=11 " >朋辈互助</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=24" >心理测量</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=10 " >院系风采</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/xinli/index.php?m=content&c=index&a=lists&catid=23 " >心动脉</a></li>
+		                        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=2940795736&site=qq&menu=yes" >在线咨询</a></li>
+		                        <li><a href="http://yuyun365.com/xueziyuyue/index.asp" >郝军工作室</a></li>
+		                    </ul>
+		                </li>
+		                <li class="dropdown" ><a href="http://syzd.itwang.wang/" class="dropdown-toggle" data-toggle="dropdown">生涯指导<span class="caret"></span></a>
+		                    <ul class="dropdown-menu" role="menu">
+		                        <li><a href="http://syzd.itwang.wang/" >生涯发展指导中心</a></li>
+		                        <li><a href="http://yuyun365.com/xueziyuyue/index.asp" >郝军工作室</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="http://czxx.xgc.ujn.me/" class="dropdown-toggle" data-toggle="dropdown">处长信箱</a></li>
+		                <li class="dropdown"><a href="http://xgc.ujn.edu.cn/whzt/">文化专题<span class="caret"></span></a>
+		                	<ul class="dropdown-menu" role="menu">
+		                        <li><a href="http://xgc.ujn.edu.cn/whzt/plus/list.php?tid=8" >校园文化</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/whzt/plus/list.php?tid=2" >儒家文化</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/whzt/plus/list.php?tid=3" >泰山文化</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/whzt/plus/list.php?tid=4" >沂蒙文化</a></li>
+		                        <li><a href="http://xgc.ujn.edu.cn/whzt/plus/list.php?tid=5" >龙山文化</a></li>
+		                    </ul>
+		                </li>
+		                <li><a href="/plus/list.php?tid=26">常用下载</a></li>
+		            </ul>
+		        </div>
+		</div>

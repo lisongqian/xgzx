@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+          content="济南大学学生工作部（处）网站(http://xgc.ujn.edu.cn),简称学工在线,是隶属于济南大学学生工作部（处）的唯一校级官方网站。济南大学十佳优秀网站之一。"/>
+	<title>{dede:global.cfg_webname/}</title>
+	<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+	<link href="{dede:global.cfg_templets_skin/}" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/jquery.slideBox.css" rel="stylesheet" type="text/css" />
+    <link href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/hf.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/index.css">
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.SuperSlide.2.1.1.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.reveal.js"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ujn.jquery.js"></script>
+    <!-- [if lt IE 9]>
+    <script src="{dede:global.cfg_templets_skin/}js/html5shiv.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}js/respond.min.js"></script>
+    <![endif] -->
+</head>
+<body style="overflow-x:hidden;">
+<!-- 	PHP head引用 -->
+	{dede:include filename="head.htm"/}
+	<div class="cont"><!-- 媒体查询应用 -->
+		<!-- 广告轮播 -->
+		<div id="xgc-carousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+			{dede:arclist row=1 orderby=pubdate typeid='19' imgwidth='1100' titlelen='100' imgheight='450'}
+			<li data-target='#xgc-carousel' data-slide-to='0' class="active"></li>
+		    {/dede:arclist}
+			{dede:arclist row=4 orderby=pubdate typeid='19' imgwidth='1100' titlelen='100' imgheight='450'}
+				<li data-target='#xgc-carousel' data-slide-to='[field:global.autoindex/]' [field:global name=autoindex runphp="yes"/]></li>
+		    {/dede:arclist}
+		    </ol>
+		    <div class="carousel-inner">
+		    	{dede:arclist row=5 flag='h' orderby=pubdate typeid='19'}
+		        <div [field:global name=autoindex runphp="yes"]if(@me==1) @me='class="item active"';else @me="class='item'";[/field:global]>
+		            <a href="[field:arcurl/]"><img src="[field:picname/]"></a>
+		        </div>
+		        {/dede:arclist}
+		    </div>
+		    <a class="left carousel-control" href="#xgc-carousel" data-slide="prev"><span
+		            class="glyphicon glyphicon-chevron-left"></span></a>
+		    <a class="right carousel-control" href="#xgc-carousel" data-slide="next"><span
+		            class="glyphicon glyphicon-chevron-right"></span></a>
+		</div>
+	<div id="bground">
+			<div class="slideTxtBox ">
+				<div class="hd">
+					<ul>
+						<a href="/plus/list.php?tid=2"><li>通知公告</li></a>
+					    <a href="/plus/list.php?tid=3"><li>学工动态</li></a>
+					    <a href="/plus/list.php?tid=4"><li>学院风采</li></a>
+					</ul>
+			</div>
+				<div class="bd">
+					<ul>
+						<div class="xmove"><label ><img src="{dede:global.cfg_templets_skin/}/images/movecontain1.svg"/><span>&nbsp;通知公告</span></label>
+						<a class="xmove more" href="/plus/list.php?tid=2"><span>查看更多&nbsp;&nbsp;</span><img src="{dede:global.cfg_templets_skin/}/images/more.png"/></a></div>
+						{dede:arclist row=5 orderby=sortrank typeid='2' titlelen='100'}
+						<li><span class="date">[field:pubdate function=date('m-d',@me)/]</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+			            <hr [field:global name=autoindex runphp="yes"](@me==5)? @me='style="border:1 dashed #987cb9;margin-bottom: 0;"': @me="";[/field:global] width:600px; color=#EEEEEE SIZE=1/>
+						{/dede:arclist}
+					</ul>
+					<ul class="contral">
+						<div class="xmove"><label ><img src="{dede:global.cfg_templets_skin/}/images/movecontain2.svg"/><span>&nbsp;学工动态</span></label>
+						<a class="xmove more" href="/plus/list.php?tid=3"><span>查看更多&nbsp;&nbsp;</span><img src="{dede:global.cfg_templets_skin/}/images/more.png"/></a></div>
+						{dede:arclist row=5 orderby=sortrank typeid='3' titlelen='100'}
+						<li><span class="date">[field:pubdate function=date('m-d',@me)/]</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+			            <hr [field:global name=autoindex runphp="yes"](@me==5)? @me='style="border:1 dashed #987cb9;margin-bottom: 0;"': @me="";[/field:global] width:600px; color=#EEEEEE SIZE=1/>
+						{/dede:arclist}
+					</ul>
+					<ul class="contral">
+						<div class="xmove"><label ><img src="{dede:global.cfg_templets_skin/}/images/movecontain3.svg"/><span>&nbsp;学院风采</span></label>
+						<a class="xmove more" href="/plus/list.php?tid=4"><span>查看更多&nbsp;&nbsp;</span><img src="{dede:global.cfg_templets_skin/}/images/more.png"/></a></div>
+						{dede:arclist row=5 orderby=sortrank typeid='4' titlelen='100'}
+						<li><span class="date">[field:pubdate function=date('m-d',@me)/]</span><a href="[field:arcurl/]" target="_blank">[field:title/]</a></li>
+			            <hr [field:global name=autoindex runphp="yes"](@me==5)? @me='style="border:1 dashed #987cb9;margin-bottom: 0;"': @me="";[/field:global] width:600px; color=#EEEEEE SIZE=1/>
+						{/dede:arclist}
+					</ul>
+				</div>
+			</div>
+		<div class="contain" >
+			<div id="spec" ><a href="/plus/list.php?tid=32"><img src="{dede:global.cfg_templets_skin/}/images/container.jpg"/><span>校园精英</span></a></div>
+			<div id="usural"><a href="/plus/list.php?tid=27"><img  src="{dede:global.cfg_templets_skin/}/images/container1.png" /><span>在线关注</span></a></div>
+			<div><a href="http://xgc.ujn.edu.cn/fudaoyuan/index.html"><img  src="{dede:global.cfg_templets_skin/}/images/container2.png" /><span>职业能力</span></a></div>
+			<div><a href="http://xgc.ujn.edu.cn/wenxue/"><img src="{dede:global.cfg_templets_skin/}/images/container3.png" /><span>菁菁文学</span></a></div>
+			<div><a href="/plus/list.php?tid=52"><img  src="{dede:global.cfg_templets_skin/}/images/container4.png" /><span>学工访谈</span></a></div>
+			<div><a href="http://cor.itwang.wang/index.php/Home/login/login"><img  src="{dede:global.cfg_templets_skin/}/images/container5.png" /><span>内部社区</span></a></div>
+			<div><a href="http://xgc.ujn.edu.cn/plus/list.php?tid=53"><img  src="{dede:global.cfg_templets_skin/}/images/container6.png" /><span>安全教育</span></a></div>
+			<div><a href="http://xgc.ujn.edu.cn/2015jiafang/index.php?upcache=1"><img  src="{dede:global.cfg_templets_skin/}/images/container7.png" /><span>辅导员家访</span></a></div>
+			<div><a href="http://xgc.ujn.edu.cn/whzt/index.html"><img src="{dede:global.cfg_templets_skin/}/images/container8.png" /><span>文化专题</span></a></div>
+			<div style="clear:both;width:0;height:0;"></div>
+		</div>
+		</div>
+	</div><!-- 调整兼容性大小框架 -->
+	<form name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php" method="post"> 
+		<div class="search-win">
+			<input type="hidden" name="kwtype" value="0" />
+	        <input type="text" name="q" class="search-input" placeholder="输入搜索内容" >
+	        <button class="search-btn" type="submit">搜索</button>
+	    </div>
+    </form>
+    <div id="weibo">
+    	<a href="http://weibo.com/u/6090577180"><img src="{dede:global.cfg_templets_skin/}/images/abl.svg"></a>
+    </div>
+<!-- 	PHP footer引用 -->
+	{dede:include filename="footer.htm"/}
+
+	<script src="{dede:global.cfg_templets_skin/}/js/bootstrap.min.js"></script>
+	<script id="jsID" type="text/javascript">
+		jQuery(".slideTxtBox").slide({});
+	</script>
+	<div style="display: none">
+		<script src="https://s22.cnzz.com/z_stat.php?id=1262041947&web_id=1262041947" language="JavaScript"></script>
+	</div>
+</body>
+</html>

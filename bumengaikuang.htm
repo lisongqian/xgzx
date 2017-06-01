@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+          content="济南大学学生工作部（处）网站(http://xgc.ujn.edu.cn),简称学工在线,是隶属于济南大学学生工作部（处）的唯一校级官方网站。济南大学十佳优秀网站之一。"/>
+	<title>{dede:global.cfg_webname/}</title>
+	<link rel="shortcut icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{dede:global.cfg_templets_skin/}/favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+    <link href="{dede:global.cfg_templets_skin/}/style/reset.css" rel="stylesheet" type="text/css">
+    <link href="{dede:global.cfg_templets_skin/}/style/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/bumengaikuang.css">
+    <link rel="stylesheet" type="text/css" href="{dede:global.cfg_templets_skin/}/style/hf.css">
+	<style type="text/css">
+	</style>
+	<script src="{dede:global.cfg_templets_skin/}/js/jquery-1.7.1.min.js" type="text/javascript"></script>
+	<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/jquery.reveal.js"></script>
+	<script>
+function submit(){
+			document.fileForm.submit();
+		}
+$(document).ready(function () {          //当加载时
+    $("#toTop").click(function(event) {
+		$("html,body").animate({
+			scrollTop:"0px"
+		},
+			666
+		)
+	});
+});
+</script>
+<script type="text/javascript" src="{dede:global.cfg_templets_skin/}/js/ujn.jquery.js"></script>
+</head>
+<body>
+
+	<!--     PHP head引用 -->
+	{dede:include filename="head.htm"/}
+	<div class="maincontent">
+		<div id="center1">
+			<div class="bmgkhead">
+				<img src="{dede:global.cfg_templets_skin/}/images/bumengaikuang_head.png" class="bg" /></div>
+			<div class="leftnav">
+				<div>
+					<img src="{dede:global.cfg_templets_skin/}/images/label.png" />
+				<span class="bmkg">部门概况</span>
+				</div>
+
+
+				<ul>
+					<li>
+						<a href="">部门简介</a>
+					</li>
+					
+					{dede:arclist idlist='66,67' orderby='id'}
+						<li><a href='[field:arcurl/]'>[field:title/]</a>
+						</li>
+						{/dede:arclist}
+				</ul>	
+			</div>
+			<div class="content">
+				<h1>部门简介</h1>
+				<article>
+					<span>&nbsp; &nbsp; 济南大学学生工作部（处）在学校党委和校行政的领导下，紧紧围绕学校中心工作，强化以学生为本，为学生服务的理念，确立了以育人为核心，以学风建设为重点，悉心教育，科学管理，热情服务，促进学生全面发展的工作思路。</span><br/>
+					<span>&nbsp; &nbsp; 学生工作部（处）下设综合科、教育科、管理科、就业指导中心、资助管理中心、心理指导中心、学生生涯发展指导中心七个分支机构。</span><br/>
+					<span>&nbsp; &nbsp; 积极开展以理想信念教育为核心，以爱国主义教育为重点，以思想道德建设为基础，以大学生全面发展为目标的思想政治教育工作，通过开展&ldquo;文明生活健康成才&rdquo;&ldquo;感恩教育&rdquo;&ldquo;励志成才&rdquo;&ldquo;诚信教育&rdquo;等系列教育活动，全面推进大学生素质教育。累计为40000名学生建立诚信档案。</span><br/>
+					<span>&nbsp; &nbsp; 不断适应高校改革发展的需要，大力加强学风建设，高度重视校园文明建设，认真研究、积极探索新形势下学生管理、服务工作的新内容、新模式、新机制，有效保障了大学生自主性、创造性、研究性学习的良好风气的建立，努力营造良好的育人环境，不断推进校园文明建设全面、健康、和谐发展。</span><br/>
+					<span>&nbsp; &nbsp; 坚持&ldquo;面向市场、双向选择、完善服务、加强指导&rdquo;的就业方针，针对学生就业发展中的新情况、新变化、新问题，积极探索新思路、研究新变化、开创新途径，总结新规律，通过实施就业指导和服务的&ldquo;三到位&rdquo;（即机构到位、人员到位、经费到位）和&ldquo;四化&rdquo;（即全程化、全员化、专业化和信息化）建设,建立和完善了校内就业服务体系。学校高度重视毕业生就业工作，进一步完善就业工作三级网络体系，努力探索开辟大学生自主创业和灵活就业新途径。</span><br/>
+					<span>&nbsp; &nbsp; 针对学生在校期间认知困惑通过课堂教学以及团体或个体咨询辅导，指导学生明晰学业发展目标，激发自主学习动力，提升社会适应力、未来职业选择与发展能力，为促进学生全面协调可持续发展提供专业化、个性化的支持。</span><br/>
+					<span>&nbsp; &nbsp; 制定了《济南大学学生特殊困难补助金管理办法》、《济南大学学生勤工助学管理办法》、《济南大学减免学费实施办法》、《济南大学学生助学贷款管理规定》、《济南大学学生勤工俭学条例》等管理规定，不断完善&ldquo;奖、勤、减、补、贷&rdquo;五位一体的帮困助学机制，努力为困难学生创造良好的学习生活环境。</span><br/>
+					<span>&nbsp; &nbsp; 遵循大学生心理健康发展规律，制定了《心理咨询暂行规定》、《济南大学心理咨询服务条约》等制度；建立了三级教育网络，设立了&ldquo;心灵使者&rdquo;，为学生提供及时、有效和高质量的心理健康指导和服务。</span>
+				</article>	
+			</div>
+			<div style="width:0;clear:both;"></div>
+		</div>	
+	</div>
+        <!--     PHP footer引用 -->
+        {dede:include filename="footer.htm"/}
+
+    <script src="{dede:global.cfg_templets_skin/}
+/js/bootstrap.min.js"></script>
+    </body>
+</html>
